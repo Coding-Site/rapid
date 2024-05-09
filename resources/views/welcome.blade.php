@@ -66,23 +66,19 @@
             <!--<span class="progress-left-about"></span>-->
             <h3 class="sec-tit">
                 من نحن </h3>
+                <div class="about-info">
+                  <div class="about-cont">
+                      <p><strong>تمتلك شركة سريع العربية خبرات طويلة في بناء المشاريع و قد حثثت نجاحا مطلقا منذ تاسيسها عام 2019 في تقديم خدمة متميزة للعملاء حيث تمتاز بدقة تنفيذ عالي الجودة فقد وضعنا الجودة هي المعيار الاساسي في تنفيذ المشاريع و هو مصدم لدينا عن المعيار الربحي و بالتالي نعمل علي مبدا ثابت وهو ان العميل اولا. </strong></p>
+                  </div>
+              </div>
             <div class="row">
-                <div class="col-lg-7">
-                    <div class="about-info">
-                        <div class="about-cont">
-                            <p><strong>تمتلك شركة سريع العربية خبرات طويلة في بناء المشاريع و قد حثثت نجاحا مطلقا منذ تاسيسها عام 2019 في تقديم خدمة متميزة للعملاء حيث تمتاز بدقة تنفيذ عالي الجودة فقد وضعنا الجودة هي المعيار الاساسي في تنفيذ المشاريع و هو مصدم لدينا عن المعيار الربحي و بالتالي نعمل علي مبدا ثابت وهو ان العميل اولا. </strong></p>
-                        </div>
-                        <div class="about-img">
-                            <img class="img-fluid" src="{{ asset('img/image.png') }}"
-                                alt="">
-                        </div>
-                    </div>
+                <div class="col-lg-6" style="margin-top: 100px">
+                  <div class="experience">
+                    <div class="experience-num" >+{{ date('Y') - 2019 }}</div>
+                    <div class="experience-tit">سنوات الخبرة</div>
                 </div>
-                <div class="col-lg-5">
-                    <div class="experience">
-                        <div class="experience-num">+{{ date('Y') - 2019 }}</div>
-                        <div class="experience-tit">سنوات الخبرة</div>
-                    </div>
+                </div>
+                <div class="col-lg-6">
                     <div class="about-items">
                         <div class="about-item">
                             <h1 class="sppb-addon-title">الرؤية</h1>
