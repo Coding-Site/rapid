@@ -1,13 +1,16 @@
 <?php
 
-use App\Http\Controllers\BranchController;
-use App\Http\Controllers\ContactController;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\NewsController;
+use App\Http\Controllers\BranchController;
+use App\Http\Controllers\ChangePasswordController;
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\ServiceController;
-use Illuminate\Support\Facades\Route;
 
 
 Route::controller(HomeController::class)->group(function(){
@@ -71,4 +74,5 @@ Route::controller(ContactController::class)->prefix('admin/contact')->name('admi
 });
 
 
+Route::post('change-password/{id}', ChangePasswordController::class)->middleware('auth')->name('admin.change-password');
 
