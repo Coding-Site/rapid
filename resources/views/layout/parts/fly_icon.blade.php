@@ -31,4 +31,10 @@
     alt="">
     </a>
 
+    <a target="_blank"
+       href="https://wa.me/966112100490">
+      <img style="width: 80%; height:80%" src="{{ asset('asset') }}/uploads/Whatsapp-Blue.png"
+      alt="">
+   </a>
+
 </section>
