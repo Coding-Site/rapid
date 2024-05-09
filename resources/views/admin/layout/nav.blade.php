@@ -27,10 +27,13 @@ id="layout-navbar">
           </button>
         </li>
         <li>
-          <a class="dropdown-item" href="auth-login-cover.html" target="_blank">
-            <i class="ti ti-logout me-2 ti-sm"></i>
-            <span class="align-middle">Log Out</span>
-          </a>
+          <form class="" action="{{ route('logout') }}" method="POST">
+            @csrf
+            <button class='dropdown-item'>
+              <i class="ti ti-logout me-2 ti-sm"></i>
+              <span class="align-middle">Log Out</span>
+            </button>
+          </form>
         </li>
       </ul>
     </li>
