@@ -40,7 +40,7 @@
 
     <ul class="menu-inner py-1">
       <li class="menu-item">
-        <a href="{{ route('admin.branch') }}" class="menu-link">
+        <a href="{{ route('admin.news') }}" class="menu-link">
           <i class="menu-icon tf-icons ti ti-news"></i>
           <div>الاخبار</div>
         </a>
