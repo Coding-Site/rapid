@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Branch;
+use App\Models\Client;
 use App\Models\News;
 use App\Models\Project;
 use Illuminate\Http\Request;
@@ -16,7 +17,8 @@ class HomeController extends Controller
     }
     function about(){
         $services = Service::all();
-        return view('about',compact('services'));
+        $clients = Client::all();
+        return view('about',compact('services','clients'));
     }
     function branch(){
         $services = Service::all();

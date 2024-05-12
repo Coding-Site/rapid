@@ -68,6 +68,13 @@
       </li>
 
       <li class="menu-item">
+        <a href="{{ route('admin.clients') }}" class="menu-link">
+          <i class="menu-icon tf-icons ti ti-news"></i>
+          <div>عملائنا</div>
+        </a>
+      </li>
+
+      <li class="menu-item">
         <a href="{{ route('admin.contact') }}" class="menu-link">
           <i class="menu-icon tf-icons ti ti-news"></i>
           <div>الرسائل</div>

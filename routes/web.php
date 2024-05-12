@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\NewsController;
+use App\Http\Controllers\ClientController;
 use App\Http\Controllers\BranchController;
 use App\Http\Controllers\ChangePasswordController;
 use App\Http\Controllers\ContactController;
@@ -47,6 +48,13 @@ Route::controller(NewsController::class)->prefix('admin/news')->name('admin.')->
     Route::post('store/', 'store')->name('news.store');
     Route::put('/update/{news}', 'update')->name('news.update');
     Route::get('/delete/{news}', 'destroy')->name('news.destroy');
+});
+
+Route::controller(ClientController::class)->prefix('admin/clients')->name('admin.')->middleware('auth')->group(function(){
+    Route::get('/', 'index')->name('clients');
+    Route::post('store/', 'store')->name('clients.store');
+    Route::put('/update/{client_id}', 'update')->name('clients.update');
+    Route::get('/delete/{client_id}', 'destroy')->name('clients.destroy');
 });
 
 Route::controller(ProjectController::class)->prefix('admin/project')->name('admin.')->middleware('auth')->group(function(){
