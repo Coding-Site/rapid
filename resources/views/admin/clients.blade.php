@@ -3,7 +3,7 @@
 <div class="card row justify-content-center">
     <div class='card-header row justify-content-between'>
         <h5 class="col-3 card-title m-4">العملاء</h5>
-        <button class="col-2 btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">اضافة ذبون</button>
+        <button class="col-2 btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">اضافة عميل</button>
 
     </div>
     <div class="card-body">
