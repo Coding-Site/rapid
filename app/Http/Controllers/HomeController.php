@@ -18,10 +18,14 @@ class HomeController extends Controller
         $services = Service::all();
         return view('about',compact('services'));
     }
-    function contact(){
+    function branch(){
         $services = Service::all();
         $branches = Branch::all();
         return view('branches',compact('services','branches'));
+    }
+    function contactus(){
+        $services = Service::all();
+        return view('contactus',compact('services'));
     }
     function project(){
         $services = Service::all();

@@ -19,7 +19,8 @@ Route::controller(HomeController::class)->group(function(){
     Route::get('project/{project}','project_show')->name('project.show');
     Route::get('service/{id}','service_show')->name('service.show');
     Route::get('gallery','gallery')->name('gallery');
-    Route::get('branch','contact')->name('branch');
+    Route::get('branch','branch')->name('branch');
+    Route::get('contactus','contactus')->name('contactus');
     Route::get('service/{id}','service_show')->name('service.show');
 });
 Route::get('/dashboard', function () {

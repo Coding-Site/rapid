@@ -107,7 +107,7 @@
                 </li>
             </ul>
             <div class="menu-icons d-flex align-items-center">
-                <a class="lang" href="{{ route('branch') }}"> تواصل معنا </a>
+                <a class="lang" href="{{ route('contactus') }}"> تواصل معنا </a>
                 <a class="nav-btn" href="javascript:void(0)">
                     <i class="fa-solid fa-bars"></i>
                 </a>
