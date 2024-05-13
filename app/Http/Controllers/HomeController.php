@@ -17,7 +17,7 @@ class HomeController extends Controller
     }
     function about(){
         $services = Service::all();
-        $clients = Client::all();
+        $clients = Client::orderBy('id', 'desc')->take(7)->get();
         return view('about',compact('services','clients'));
     }
     function branch(){

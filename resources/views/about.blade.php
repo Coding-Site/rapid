@@ -60,13 +60,18 @@
     <section class="clients">
         <div class="container">
             <h2>عملائنا</h2>
-            <section class="customer-logos slider">
+            <section class="d-flex" style="justify-content: center">
                 @foreach ($clients as $client)
-                <div class="slide"><img
-                        src="{{ url('storage').'/'.$client->photo }}"></div>
-               
-
-                        @endforeach
+                <div class="" style="text-align: center; margin: 10px; ">
+                    <img style=" border-radius: 50%;
+                    width: 100px;
+                    height: 100px;
+                    display:block;
+  margin: 0 auto;
+                    " src="{{ url('storage').'/'.$client->photo }}">
+                    <span style="display: inline-block;">{{$client->name}}</span>
+                </div>
+                @endforeach
             </section>
         </div>
     </section>
